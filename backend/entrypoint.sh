@@ -1,9 +1,7 @@
 #!/bin/sh
 
-# We have base custom user model so need to makemigrations out of box
-python manage.py makemigrations core
-
+# make the changes on DB
+python manage.py makemigrations
 python manage.py migrate
-python manage.py collectstatic --noinput
 
-exec "$@"
+# python manage.py collectstatic --noinput
