@@ -9,5 +9,5 @@ services:
       - 8000:8000
     volumes:
       - ./backend/:/srv/app
-      - static:/srv/app/static
-      - media:/srv/app/media
+      - ./static:/srv/app/static
+      - ./media:/srv/app/media
