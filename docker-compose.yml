@@ -8,5 +8,6 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./backend/:/srv/app
-      - ./media:/srv/app/media
+      - ../config:/bakcend/app
+      - ../media:/bakcend/app/media
+      - ../db:/bakcend/app/db
