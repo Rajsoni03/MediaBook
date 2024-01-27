@@ -3,11 +3,10 @@ version: '3.8'
 services:      
   django:
     build: ./backend
-    container_name: dev-django
+    container_name: django-backend
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - 8000:8000
     volumes:
       - ./backend/:/srv/app
-      - ./static:/srv/app/static
       - ./media:/srv/app/media
