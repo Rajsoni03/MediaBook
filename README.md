@@ -1,6 +1,6 @@
 # MediaBook
 
-MediaBook is a social media project that allows users to post images, videos and listen music with friends with remote sync.
+MediaBook is a social media project that allows users to post images, videos, and listen to music with friends through remote sync.
 
 ## Table of Contents
 - [Features](#features)
