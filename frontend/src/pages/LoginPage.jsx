@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import AuthContext from '../context/AuthContext'
+
 
 const LoginPage = () => {
+    let {loginUser} = useContext(AuthContext)
+
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center mt-10 px-6 py-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -15,17 +19,17 @@ const LoginPage = () => {
             </div>
 
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form className="space-y-6" action="#" method="POST">
+                <form className="space-y-6" onSubmit={loginUser}>
                     <div>
-                        <label htmlFor="test" className="block text-sm font-medium leading-6 text-gray-900">
+                        <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
                             Username
                         </label>
                         <div className="mt-2">
                             <input
-                                id="test"
-                                name="test"
-                                type="test"
-                                autoComplete="test"
+                                id="username"
+                                name="username"
+                                type="username"
+                                autoComplete="username"
                                 placeholder="Enter username here.."
                                 required
                                 className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
