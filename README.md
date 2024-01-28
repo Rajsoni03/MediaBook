@@ -1,6 +1,6 @@
 # MediaBook
 MediaBook is a social media platform.
 
-## Frontend - React
+## Docker Container (React + Django + Nginx)
 
-## Backend - Django
+
