@@ -8,6 +8,8 @@ __pycache__/
 
 # Django files
 migrations/
+config.json
+
 
 # Distribution / packaging
 .Python
