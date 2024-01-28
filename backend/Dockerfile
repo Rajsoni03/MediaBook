@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # set work directory
-WORKDIR /bakcend/app
+WORKDIR /app/backend
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -16,10 +16,10 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
 # copy entrypoint.sh
-# COPY ./entrypoint.sh .
+COPY ./entrypoint.sh .
 
 # copy project
 COPY . .
 
 # run entrypoint.sh
-# ENTRYPOINT ["/bakcend/app/entrypoint.sh"]
+ENTRYPOINT ["/app/backend/entrypoint.sh"]

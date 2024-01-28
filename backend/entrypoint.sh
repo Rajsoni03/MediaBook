@@ -4,4 +4,8 @@
 python manage.py makemigrations
 python manage.py migrate
 
-# python manage.py collectstatic --noinput
+# copy static files to static dir
+python manage.py collectstatic --noinput
+
+#start django server
+python manage.py runserver 0.0.0.0:8000
