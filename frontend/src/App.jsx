@@ -1,22 +1,26 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import Headers from './components/Headers'
+import PrivateRoutes from './utils/PrivateRoutes'
+
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Headers/>
+      <Router>
+        <Headers />
         <Routes>
-          <Route path="/" element={<HomePage />} exact />
+          <Route element={<PrivateRoutes />}>
+            <Route path="/" element={<HomePage />} exact />
+          </Route>
           <Route path="/login" element={<LoginPage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   )
 }
 
-export default App
+export default App;
