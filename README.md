@@ -42,12 +42,18 @@ Before you begin, ensure you have the following tools installed:
     ```
 
 3. Build and run the Docker containers:
-    ```
-    bashdocker-compose up --build
+    ```bash
+    docker-compose up --build
     ```
     This will start the Django backend, React frontend, and Nginx web server.
 
 4. Open your web browser and navigate to http://localhost to access MediaBook.
+
+5. Open the application port from incomming TCP traffic.
+    
+    ```bash
+    sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+    ```
 
 ## Technologies
 
