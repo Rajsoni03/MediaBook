@@ -154,10 +154,17 @@ DATABASES = {
        'NAME': 'postgres',
        'USER': 'postgres',
        'PASSWORD': 'password',
-       'HOST': '192.168.0.102',
+       'HOST': 'http://rajsoni.online',
        'PORT': '5432',
    }
 }
+
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.sqlite3',
+#          'NAME': BASE_DIR / 'db/db.sqlite3',
+#     }
+# }
 
 
 # Password validation
