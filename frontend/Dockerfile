@@ -17,5 +17,3 @@ COPY . .
 
 # start the server
 CMD ["npm", "run", "dev"]
-
-v21.7.1
