@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:lts-slim
+FROM node:21.7.3-alpine3.20
 
 # set work directory
 WORKDIR /app/frontend
@@ -17,3 +17,5 @@ COPY . .
 
 # start the server
 CMD ["npm", "run", "dev"]
+
+v21.7.1
