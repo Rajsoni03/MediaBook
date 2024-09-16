@@ -15,7 +15,7 @@ function App() {
     <>
       <Router>
         <AuthProvider>
-          <Headers />
+          <Navbar />
           <Routes>
             <Route element={<PrivateRoutes />}>
               <Route path="/" element={<HomePage />} exact />
