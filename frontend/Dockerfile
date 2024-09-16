@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:21.7.3-alpine3.20
+FROM node:21.7.1-slim
 
 # set work directory
 WORKDIR /app/frontend
