@@ -154,7 +154,7 @@ DATABASES = {
        'NAME': 'postgres',
        'USER': 'postgres',
        'PASSWORD': 'password',
-       'HOST': 'http://rajsoni.online',
+       'HOST': 'ip-172-31-7-198',
        'PORT': '5432',
    }
 }
