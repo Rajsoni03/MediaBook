@@ -8,13 +8,14 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import Headers from './components/Headers'
 import PrivateRoutes from './utils/PrivateRoutes'
+import Navbar from './components/NavBar'
 
 function App() {
   return (
     <>
       <Router>
         <AuthProvider>
-          <Headers />
+          <Navbar />
           <Routes>
             <Route element={<PrivateRoutes />}>
               <Route path="/" element={<HomePage />} exact />
